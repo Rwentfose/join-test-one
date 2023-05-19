@@ -19,10 +19,12 @@ spring:
       enabled: false
   activiti:
     check-process-definitions: false
+mybatis-plus:
+  mapper-locations: classpath*:mybatis/**/*Mapper.xml
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
-  mapper-locations: mybatis/**/*Mapper.xml
+  mapper-locations: classpath*:mybatis/**/*Mapper.xml
   typeAliasesPackage: com.yizhi.**.domain
 #JWT配置
 ##认证名称

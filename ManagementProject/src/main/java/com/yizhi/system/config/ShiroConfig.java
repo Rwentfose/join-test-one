@@ -54,8 +54,6 @@ import javax.servlet.Filter;
 public class ShiroConfig {
     @Value("${spring.redis.host}")
     private String host;
-    @Value("${spring.redis.password}")
-    private String password;
     @Value("${spring.redis.port}")
     private int port;
     @Value("${spring.redis.timeout}")
@@ -212,9 +210,7 @@ public class ShiroConfig {
         redisManager.setPort(port);
         redisManager.setExpire(tomcatTimeout);// 配置缓存过期时间
         redisManager.setTimeout(timeout);
-        if (!StringUtils.isEmpty(password)) {
-        	redisManager.setPassword(password);
-        }
+
         return redisManager;
     }
 
