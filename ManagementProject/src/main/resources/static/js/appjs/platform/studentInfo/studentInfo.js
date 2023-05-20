@@ -56,7 +56,7 @@ layui.config({
 			{field : 'classId', title : '所属班级'},
 			{field : 'studentName', title : '学生姓名'},
 			{field : 'certify', title : '身份证号'},
-			{field : 'mailAddress', title : '家庭住址'},
+			{field : 'mailAddress', title : '邮箱地址'},
 			{field : 'foreignLanaguage', title : '外语语种'},
 			{field : 'studentSex', title : '性别'},
 			{field : 'nation', title : '民族'},
